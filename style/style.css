@@ -1,0 +1,275 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clearfix {
+  content: "";
+  clear: both;
+  display: block;
+}
+label {
+  cursor: pointer;
+}
+.wrapper {
+  background-color: aqua;
+  margin: 0 auto;
+  width: 1200px;
+  height: 600px;
+  text-align: center;
+}
+textarea::-moz-placeholder {
+  color: deeppink;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: lightgrey;
+  opacity: 0.5;
+  padding: 10px 10px;
+}
+textarea::-webkit-placeholder {
+  color: deeppink;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: lightgrey;
+  opacity: 0.5;
+  padding: 10px 10px;
+}
+textarea::-ms-placeholder {
+  color: deeppink;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: lightgrey;
+  opacity: 0.5;
+  padding: 10px 10px;
+}
+textarea::placeholder {
+  color: deeppink;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: lightgrey;
+  opacity: 0.5;
+  padding: 10px 10px;
+}
+textarea:focus::placeholder {
+  color: transparent;
+  background-color: rgb(241, 247, 207);
+}
+textarea {
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  max-width: 500px;
+  resize: both;
+  padding: 10px 10px;
+  font-size: 20px;
+  background-color: rgb(241, 247, 207);
+  color: grey;
+  transition: all 2s ease-in-out;
+}
+textarea:hover {
+  background-color: rgb(176, 232, 241);
+  color: black;
+  transition: all 1s ease-in-out;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+input[type="radio"] + label {
+  position: relative;
+  padding: 10px 10px 10px 30px;
+}
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+input[type="radio"]:checked + label::before {
+  background-color: green;
+}
+.radio p {
+  margin: 20px 0;
+}
+.select {
+  position: relative;
+  display: inline-block;
+}
+.select::after {
+  position: absolute;
+  display: inline-block;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  content: "";
+  pointer-events: none;
+  background: url("/image/sport.png");
+}
+select {
+  display: inline-block;
+  width: 240px;
+  height: 40px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 2px solid rgb(90, 187, 11);
+  border-radius: 10px;
+}
+.checkbox {
+  margin: 50px 0;
+}
+.checkbox label {
+  position: relative;
+  padding: 20px 0 20px 160px;
+}
+input[type="checkbox"] + label::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  height: 50px;
+  border-radius: 40px;
+  border: 2px solid rgb(16, 198, 211);
+  background-color: rgb(218, 217, 217);
+  transition: all 1s linear;
+}
+input[type="checkbox"] + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;
+  transition: all 1s ease;
+}
+input[type="checkbox"]:checked + label::after {
+  left: 100px;
+}
+input[type="checkbox"]:checked + label::before {
+  background-color: yellow;
+}

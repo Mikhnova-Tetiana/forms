@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <textarea placeholder="Введите ваше сообщение" id=""></textarea>
+
+      <div class="radio">
+        <h2>Выберите количество занятий в месяц</h2>
+        <p>
+          <input type="radio" name="quantity" id="four" />
+          <label for="four">четыре занятия</label>
+        </p>
+        <p>
+          <input type="radio" name="quantity" id="eight" />
+          <label for="eight">восемь занятия</label>
+        </p>
+        <p>
+          <input type="radio" name="quantity" id="twelwe" />
+          <label for="twelwe">двенадцать занятий</label>
+        </p>
+      </div>
+      <label for="days">Выберите дни занятий</label>
+      <div class="select">
+        <select id="days">
+          <option value="mon_wen" id="mon_wen">понедельник, среда</option>
+          <option value="tus_fri" id="tus_fri">вторник, пятница</option>
+          <option value="ths_sut" id="ths_sut">четверг, суббота</option>
+        </select>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="press_it" />
+        <label for="press_it"></label>
+      </div>
+    </div>
+  </body>
+</html>
